@@ -9,14 +9,12 @@ import logo5 from '../../assets/logo (5).png'
 import logo6 from '../../assets/logo (6).png'
 import logo7 from '../../assets/logo (7).png'
 import section from '../../assets/section.png'
-import cardone from '../../assets/cardimage.png'
-import cardone2 from '../../assets/cardimage2.png'
-import cardone3 from '../../assets/cardimage3.png'
 import designcard from '../../assets/carddesignimage.png'
 import FAQ from '../FAQ/FAQ'
 import Offer from '../Offer/Offer'
 import OfferContent from '../Offer/OfferContent'
 import Footer from '../Footer/Footer'
+import FeaturedCourses from '../FeaturedCourses/FeaturedCourses'
 
 
 
@@ -51,26 +49,58 @@ const Hero = () => {
 
       </section>
 
-      <section className=''>
-        <div className="pl-10 pt-5  font-semibold text-2xl"><h1>Learn from 150+ universities and companies</h1></div>
-        <div className="pl-10 pt-20 gap-5 md:gap-8 flex flex-row justify-center lg:justify-start flex-wrap">
-          <div className="flex flex-row items-center justify-center gap-2"><img src={logo1} className='h-12 w-16 ' /></div>
+      <section className='bg-white py-14'>
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className='text-3xl font-bold text-gray-900 mb-10'>Learn from 150+ Universities and companies</h2>
 
-          <div className="flex flex-row items-center justify-center gap-2"><img src={logo2} className='h-12 w-16 ' /></div>
+          <div className="flex flex-wrap justify-center lg:justify-between items-center gap-x-12 gap-y-10">
+            <div className="w-32 flex justify-center">
+              <img src={logo1}
+                className='max-h-16 object-contain'
+                alt="" />
+            </div>
+
+            <div className="w-32 flex justify-center">
+              <img src={logo2}
+                className='max-h-16 object-contain'
+                alt="" />
+            </div>
 
 
-          <div className="flex flex-row items-center justify-center gap-2"><img src={logo3} className='h-12 w-16 ' /></div>
-
-          <div className="flex flex-row items-center justify-center gap-2"><img src={logo4} className='h-12 w-16 ' /></div>
-
-
-          <div className="flex flex-row items-center justify-center gap-2"><img src={logo5} className='h-12 w-16 ' /></div>
-
-
-          <div className="flex flex-row items-center justify-center gap-2"><img src={logo6} className='h-12 w-16 ' /></div>
+            <div className="w-32 flex justify-center">
+              <img src={logo3}
+                className='max-h-16 object-contain'
+                alt="" />
+            </div>
 
 
-          <div className="flex flex-row items-center justify-center gap-2"><img src={logo7} className='h-12 w-16' /></div>
+
+            <div className="w-32 flex justify-center">
+              <img src={logo4}
+                className='max-h-16 object-contain'
+                alt="" />
+            </div>
+
+
+            <div className="w-32 flex justify-center">
+              <img src={logo5}
+                className='max-h-16 object-contain'
+                alt="" />
+            </div>
+
+
+            <div className="w-32 flex justify-center">
+              <img src={logo6}
+                className='max-h-16 object-contain'
+                alt="" />
+            </div>
+
+            <div className="w-32 flex justify-center">
+              <img src={logo7}
+                className='max-h-16 object-contain'
+                alt="" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -110,161 +140,59 @@ const Hero = () => {
 
       </section>
 
-      <section className="flex flex-col-reverse  lg:flex-row pt-10 items-center justify-between flex-wrap px-30 ">
-        <div className="flex flex-col gap-12 ">
-          <h1 className='font-semibold text-3xl '>Join 90% of Learnes who achieved a <br /> positive career outcome, like new job <br /> Opportunity, increase knowledge, and <br /> improve performance to work.</h1>
-          <button className='text-blue-500 w-35 h-12 border-[1px] font-semibold border-blue-700 px-4 rounded py-2 hover:text-blue-600 hover:border-blue-800 cursor-pointer'>Get 40% off</button>
-        </div>
+      <section className="max-w-7xl mx-auto px-6 py-20">
 
-        <div className="">
-          <img src={section} className='h-100 w-130 sm:h-50%' alt="" />
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
+
+          {/* Left */}
+          <div className="w-full lg:w-1/2 space-y-8">
+
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+              Join 90% of learners who achieved a positive career outcome,
+              like new job opportunities, increased knowledge,
+              and improved workplace performance.
+            </h1>
+
+            <button className="w-fit px-8 py-3 border border-blue-700 text-blue-700 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition">
+              Get 40% Off
+            </button>
+
+          </div>
+
+          {/* Right */}
+          <div className="w-full lg:w-1/2 flex justify-center">
+
+            <img
+              src={section}
+              className="w-full max-w-xl h-auto"
+              alt=""
+            />
+
+          </div>
+
         </div>
 
       </section>
 
       {/* section 3 */}
-      <section className='h-auto min-h-[90vh] flex items-center justify-center w-full  bg-white'>
-        <div className=" bg-gray-100  rounded rounded-xl p-10 sm:p-5 flex flex-row flex-wrap items-start justify-center gap-2 md:gap-3 lg:gap-5">
-
-
-          <div className="w-[280px] flex flex-col items-start h-[280px] justify-center gap-4">
-            <h1 className='font-bold text-base md:text-lg xl:text-2xl'>Career skill that work</h1>
-            <button className='py-2 px-4 w-1/2 rounded border text-blue-500 border-blue-500'>Get 40% off</button>
-          </div>
-
-
-          {/* card 1 */}
-          <div className="flex flex-col">
-
-            <div className="w-[96%] bg-white rounded-[10px] border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg p-2 duration-300 cursor-pointer">
-
-              <img
-                src={cardone}
-                alt="Course"
-                className="w-full h-40 object-cover rounded-[10px]"
-              />
-
-              <div className="p-4">
-
-                <div className="flex items-center gap-2 text-gray-500 text-sm">
-                  <div className="w-6 h-6 border rounded flex items-center justify-center text-[10px] font-semibold">
-                    SU
-                  </div>
-
-                  <span>Stanford University</span>
-                </div>
-
-                <h2 className="text-xl font-semibold text-gray-900 mt-3">
-                  AI in Healthcare
-                </h2>
-
-                <p className="text-gray-500 mt-4 text-sm">
-                  Beginner Specialization
-                </p>
-
-              </div>
-
-
-            </div>
-
-            <button className="mt-3 ml-2 w-fit px-5 py-2 border border-blue-600 text-blue-600 rounded-lg">
-              Show 8 more
-            </button>
-
-          </div>
-
-          {/* card 2 */}
-          <div className="">
-
-            <div className="w-[280px] bg-white rounded-[10px] border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg p-2 duration-300 cursor-pointer">
-
-              <img
-                src={cardone2}
-                alt="Course"
-                className="w-full h-40 object-cover rounded-[10px]"
-              />
-
-              <div className="p-4">
-
-                <div className="flex items-center gap-2 text-gray-500 text-sm">
-                  <div className="w-6 h-6 border rounded flex items-center justify-center text-[10px] font-semibold">
-                    SU
-                  </div>
-
-                  <span>Stanford University</span>
-                </div>
-
-                <h2 className="text-xl font-semibold text-gray-900 mt-3">
-                  Python For Everydays
-                </h2>
-
-                <p className="text-gray-500 mt-4 text-sm">
-                  Beginner Specialization
-                </p>
-
-              </div>
-            </div>
-
-
-          </div>
-
-          {/* card 3 */}
-          <div className="">
-
-            <div className="w-[280px] bg-white rounded-[10px] border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg p-2 duration-300 cursor-pointer">
-
-              <img
-                src={cardone3}
-                alt="Course"
-                className="w-full h-40 object-cover rounded-[10px]"
-              />
-
-              <div className="p-4">
-
-                <div className="flex items-center gap-2 text-gray-500 text-sm">
-                  <div className="w-6 h-6 border rounded flex items-center justify-center text-[10px] font-semibold">
-                    SU
-                  </div>
-
-                  <span>Stanford University</span>
-                </div>
-
-                <h2 className="text-xl font-semibold text-gray-900 mt-3">
-                  Prompt Engineering
-                </h2>
-
-                <p className="text-gray-500 mt-4 text-sm">
-                  Beginner Specialization
-                </p>
-
-              </div>
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-      </section>
+      <FeaturedCourses />
 
       {/* section 4 */}
-
       <section className='min-h-[90vh]  bg-white'>
 
-        <div className="flex flex-col items-center justify-center gap-5">
+        <div className="flex flex-col md:px-5 sm:px-5 px-5 items-center justify-center gap-5">
           <h1 className='text-3xl font-semibold'>Search 10,000+ learning programs</h1>
 
           <div className="w-full max-w-6xl relative">
             <input
               type="text"
               placeholder='e.g Machine learning'
-              className='w-full h-14 border border-gray-300 rounded-xl pl-12 pr-4 focus:outline-none foucus:-ring-2 focus:ring-blue-600'
+              className='w-full md:h-12 h-10 lg:h-14 border border-gray-300 rounded-xl pl-12 pr-4 focus:outline-none foucus:-ring-2 focus:ring-blue-600'
             />
           </div>
 
 
-          <div className="flex flex-row flex-wrap gap-5 text-gray-700">
+          <div className="flex flex-row px-2 md:px-2 flex-wrap gap-5 text-gray-700">
             <button className="px-4 py-2 cursor-pointer rounded-md bg-gray-100 hover:bg-gray-200 text-sm transition">Poplur</button>
             <button className='px-4 py-2 rounded-md bg-gray-100 hover:bg-gray-200 text-sm transition cursor-pointer'>Business</button>
             <button className='px-4 py-2 rounded-md bg-gray-100 hover:bg-gray-200 text-sm transition cursor-pointer'>Computer Science</button>
@@ -337,7 +265,7 @@ const Hero = () => {
 
 
       {/* section 7 */}
-      <section>
+      <section className='bg-slate-50 py-20'>
         <Footer />
       </section>
 

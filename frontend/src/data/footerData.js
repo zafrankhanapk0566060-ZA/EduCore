@@ -32,10 +32,10 @@ const footerData = [
     id: 3,
     title: "Courses & Specializations",
     links: [
-      "AI Essentials",
+      "AI Essentials Specialization",
       "AI For Everyone",
       "Deep Learning",
-      "Excel Skills",
+      "Excel Skills for Business Specialization",
       "Machine Learning",
       "Python Specialization"
     ]
@@ -47,6 +47,7 @@ const footerData = [
     links: [
       "Career Aptitude Test",
       "Cybersecurity",
+      "CompTIA A+ Certification Requirements",
       "Resume Tips",
       "Interview Tips"
     ]

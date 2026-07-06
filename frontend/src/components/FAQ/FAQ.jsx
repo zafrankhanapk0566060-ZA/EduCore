@@ -17,7 +17,7 @@ const FAQ = () => {
       </h1>
 
       <div className="max-w-5xl mx-auto mt-10 px-6 pt-8 rounded-lg border border-gray-300">
-        {
+        {         
           visibleQuestion.map((faq) => (
             <FAQItems
               key={faq.id}
@@ -42,6 +42,8 @@ const FAQ = () => {
                 ? "Show less"
                 : `Show all ${faqData.length} frequently asked questions`}
             </button>
+
+            
             {
               showAll
                 ? <FiChevronUp className="text-xl" />
