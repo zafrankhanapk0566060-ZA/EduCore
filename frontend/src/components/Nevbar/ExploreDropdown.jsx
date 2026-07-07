@@ -18,7 +18,7 @@ const ExploreDropdown = ({ categories }) => {
 
 
         <button
-          className="hidden md:flex items-center gap-2  text-base hover:text-blue-600 transition"
+          className="hidden md:flex items-center gap-2 py-7 text-base hover:text-blue-600 transition"
         >
           Explore
           <ChevronDown size={18} />

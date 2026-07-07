@@ -15,6 +15,8 @@ import Offer from '../Offer/Offer'
 import OfferContent from '../Offer/OfferContent'
 import Footer from '../Footer/Footer'
 import FeaturedCourses from '../FeaturedCourses/FeaturedCourses'
+import Testimonials from '../Testimonials/Testimonials'
+import PopularCategories from '../PopularCategories/PopularCategories'
 
 
 
@@ -177,10 +179,14 @@ const Hero = () => {
       {/* section 3 */}
       <FeaturedCourses />
 
+      <Testimonials />
+
+      <PopularCategories />
+
       {/* section 4 */}
       <section className='min-h-[90vh]  bg-white'>
 
-        <div className="flex flex-col md:px-5 sm:px-5 px-5 items-center justify-center gap-5">
+        <div className="flex flex-col md:px-5 sm:px-5 px-5 pt-5 items-center justify-center gap-5">
           <h1 className='text-3xl font-semibold'>Search 10,000+ learning programs</h1>
 
           <div className="w-full max-w-6xl relative">
@@ -262,6 +268,7 @@ const Hero = () => {
         <Offer />
         <OfferContent />
       </section>
+
 
 
       {/* section 7 */}
