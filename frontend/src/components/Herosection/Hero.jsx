@@ -17,6 +17,9 @@ import Footer from '../Footer/Footer'
 import FeaturedCourses from '../FeaturedCourses/FeaturedCourses'
 import Testimonials from '../Testimonials/Testimonials'
 import PopularCategories from '../PopularCategories/PopularCategories'
+import WhyChoose from '../WhyChoose/WhyChoose'
+import TrustedCompanies from '../TrustedCompanies/TrustedCompanies'
+import Statistics from '../Statistics/Statistics'
 
 
 
@@ -51,60 +54,8 @@ const Hero = () => {
 
       </section>
 
-      <section className='bg-white py-14'>
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className='text-3xl font-bold text-gray-900 mb-10'>Learn from 150+ Universities and companies</h2>
 
-          <div className="flex flex-wrap justify-center lg:justify-between items-center gap-x-12 gap-y-10">
-            <div className="w-32 flex justify-center">
-              <img src={logo1}
-                className='max-h-16 object-contain'
-                alt="" />
-            </div>
-
-            <div className="w-32 flex justify-center">
-              <img src={logo2}
-                className='max-h-16 object-contain'
-                alt="" />
-            </div>
-
-
-            <div className="w-32 flex justify-center">
-              <img src={logo3}
-                className='max-h-16 object-contain'
-                alt="" />
-            </div>
-
-
-
-            <div className="w-32 flex justify-center">
-              <img src={logo4}
-                className='max-h-16 object-contain'
-                alt="" />
-            </div>
-
-
-            <div className="w-32 flex justify-center">
-              <img src={logo5}
-                className='max-h-16 object-contain'
-                alt="" />
-            </div>
-
-
-            <div className="w-32 flex justify-center">
-              <img src={logo6}
-                className='max-h-16 object-contain'
-                alt="" />
-            </div>
-
-            <div className="w-32 flex justify-center">
-              <img src={logo7}
-                className='max-h-16 object-contain'
-                alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <TrustedCompanies />
 
       <section className="bg-sky-50  mt-20 pb-10">
         <div className="pl-7 pt-6 text-xl font-semibold">Invest in your career</div>
@@ -176,12 +127,19 @@ const Hero = () => {
 
       </section>
 
+      <PopularCategories />
+
       {/* section 3 */}
       <FeaturedCourses />
 
+
+      <WhyChoose />
+
+      <Statistics />
+
       <Testimonials />
 
-      <PopularCategories />
+
 
       {/* section 4 */}
       <section className='min-h-[90vh]  bg-white'>

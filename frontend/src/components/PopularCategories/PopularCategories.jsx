@@ -6,7 +6,7 @@ import CategoryCard from './CategoryCard'
 
 const PopularCategories = () => {
     return (
-        <section className='bg-slate-300 py-20'>
+        <section className='bg-sky-50 py-20'>
             <div className="max-w-7xl mx-auto px-6">
                 <CategoryHeader />
                 <CategoryGrid />

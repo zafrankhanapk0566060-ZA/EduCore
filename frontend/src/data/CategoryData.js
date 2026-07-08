@@ -1,13 +1,4 @@
-import {
-    FaCode,
-    FaBriefcase,
-    FaPaintBrush,
-    FaCamera,
-    FaRobot,
-    FaMobileAlt,
-    FaBullhorn,
-    FaChartLine,
-} from "react-icons/fa";
+import { FaCode, FaBriefcase, FaPaintBrush, FaCamera, FaRobot, FaMobileAlt, FaBullhorn, FaChartLine, } from "react-icons/fa";
 
 const categoryData = [
     {
@@ -16,7 +7,7 @@ const categoryData = [
         title: "Programming",
         courses: 560,
         color: "bg-blue-100 text-blue-600",
-    },  
+    },
     {
         id: 2,
         icon: FaBriefcase,
